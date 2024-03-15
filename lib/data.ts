@@ -2,9 +2,8 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import onspringcardImg from "@/public/onspringcard.png";
+import portfoliositecardImg from "@/public/portfoliositecard.png";
 
 export const links = [
   {
@@ -62,25 +61,18 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "Onspring API/SDK Python Library",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      "When I worked for Onspring, I developed and scripted several API projects. This project was the largest.",
+    tags: ["Python", "API/SDK", "MongoDB"],
+    imageUrl: onspringcardImg,
   },
   {
-    title: "rmtDev",
+    title: "This Site",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
-  },
-  {
-    title: "Word Analytics",
-    description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+      "In my off time from my current job, I have developed this site.",
+    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Framer Motion"],
+    imageUrl: portfoliositecardImg,
   },
 ] as const;
 
