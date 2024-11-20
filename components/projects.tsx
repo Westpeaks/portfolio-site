@@ -1,13 +1,28 @@
-import React from 'react';
+"use client";
+
+import React, { useEffect } from 'react';
 import SectionHeading from './section-heading';
 import { projectsData } from '@/lib/data';
 import Project from './project';
+import { useInView } from 'react-intersection-observer';
+import { useActiveSectionContext } from '@/context/active-section-context';
 
 export default function Projects() {
-  return (
-    <section>
+  const {ref, inView} = useInView({
+    threshold: 0.75
+  });
+  const { setActiveSection, timeOfLastClick } = useActiveSectionContext();
 
-        <SectionHeading>my projects</SectionHeading>
+  useEffect(() => {
+    if (inView && Date.now() - timeOfLastClick > 1000) {
+      setActiveSection("Projects");
+    }
+  }, [inView, setActiveSection, timeOfLastClick])
+
+  return (
+    <section ref={ref} id='projects' className='scroll-mt-28'>
+
+        <SectionHeading>coding and writing projects</SectionHeading>
         <div>
           {projectsData.map((project, index) => (
             <React.Fragment key={index}>

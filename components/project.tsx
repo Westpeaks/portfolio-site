@@ -3,6 +3,7 @@
 import { useRef } from 'react'
 import { projectsData } from '@/lib/data'
 import Image from 'next/image'
+import 
 import { motion, useScroll, useTransform } from 'framer-motion'
 
 type ProjectProps = (typeof projectsData)[number];
@@ -36,21 +37,23 @@ export default function Project( {title, description, tags, imageUrl}:ProjectPro
                 ))}
             </ul>
             </div>
-            
-            <Image src={imageUrl} alt="Project I worked on" quality={95} className='absolute top-8 -right-40 
-            w-[28.25rem] rounded-t-lg shadow-2xl transition 
+            <a href={hoverUrl} target='blank'>
+                <Image src={imageUrl} alt="Project I worked on" quality={95} className='absolute top-8 -right-40 
+                w-[28.25rem] rounded-t-lg shadow-2xl transition 
 
-            group-hover:scale-[1.04] 
-            goup-hover:-translate-x-3 
-            group-hover:translate-y-3 
-            group-hover:-rotate-2 
-            
-            group-even:goup-hover:translate-x-3 
-            group-even:group-hover:translate-y-3 
-            group-even:group-hover:rotate-2  
-            group-even:right-[initial] 
-            group-even:-left-40' />           
+                group-hover:scale-[1.04] 
+                goup-hover:-translate-x-3 
+                group-hover:translate-y-3 
+                group-hover:-rotate-2 
+                
+                group-even:goup-hover:translate-x-3 
+                group-even:group-hover:translate-y-3 
+                group-even:group-hover:rotate-2  
+                group-even:right-[initial] 
+                group-even:-left-40' 
 
+                />           
+            </a>
         </section>
     </motion.div>
   )

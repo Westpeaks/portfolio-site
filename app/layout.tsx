@@ -1,12 +1,13 @@
 import Header from '@/components/header'
 import './globals.css'
 import { Inter } from 'next/font/google'
+import ActiveSectionContextProvider from '@/context/active-section-context'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Wesley Peak | Portfolio',
-  description: 'Wesley is a Technical Support Engineer with over 6 years of experience',
+  description: 'Wesley is a Technical Support Engineer with over 7 years of experience',
 }
 
 export default function RootLayout({
@@ -15,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className='!scroll-smooth'>
       <body className={`${inter.className} bg-gray-50 text-gray-950 relative h-[5000px] 
       pt-28 sm:pt-36`}>
 
@@ -25,8 +26,11 @@ export default function RootLayout({
         h-[31.25rem] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] 
         lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem]'></div>
         
-        <Header />
-        {children}
+        <ActiveSectionContextProvider>
+          <Header />
+          {children}
+        </ActiveSectionContextProvider>
+        
       </body>
     </html>
   )
