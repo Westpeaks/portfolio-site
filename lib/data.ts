@@ -66,7 +66,7 @@ export const projectsData = [
       "When I worked for Onspring, I developed and scripted several API projects. This project was a library I built for the Onspring SDK.",
     tags: ["Python", "API/SDK", "MongoDB"],
     imageUrl: onspringcardImg,
-    hoverUrl: "https://github.com/Westpeaks/OnspringAPILibraryPython"
+    hoverUrl: "https://github.com/Westpeaks/OnspringAPILibraryPython",
   },
   {
     title: "This Site",

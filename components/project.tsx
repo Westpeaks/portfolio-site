@@ -3,12 +3,11 @@
 import { useRef } from 'react'
 import { projectsData } from '@/lib/data'
 import Image from 'next/image'
-import 
 import { motion, useScroll, useTransform } from 'framer-motion'
 
 type ProjectProps = (typeof projectsData)[number];
 
-export default function Project( {title, description, tags, imageUrl}:ProjectProps) {
+export default function Project( {title, description, tags, hoverUrl, imageUrl}:ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -50,9 +49,7 @@ export default function Project( {title, description, tags, imageUrl}:ProjectPro
                 group-even:group-hover:translate-y-3 
                 group-even:group-hover:rotate-2  
                 group-even:right-[initial] 
-                group-even:-left-40' 
-
-                />           
+                group-even:-left-40' />           
             </a>
         </section>
     </motion.div>
