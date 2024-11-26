@@ -4,6 +4,7 @@ import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import onspringcardImg from "@/public/onspringcard.png";
 import portfoliositecardImg from "@/public/portfoliositecard.png";
+import healthcheckcardImg from "@/public/healthcheckcardalt.png";
 
 export const links = [
   {
@@ -21,10 +22,6 @@ export const links = [
   {
     name: "Skills",
     hash: "#skills",
-  },
-  {
-    name: "Experience",
-    hash: "#experience",
   },
   {
     name: "Contact",
@@ -69,6 +66,14 @@ export const projectsData = [
     hoverUrl: "https://github.com/Westpeaks/OnspringAPILibraryPython",
   },
   {
+    title: "HTTP Healthcheck Script",
+    description:
+      "This is a project I did as part of training for site reliability engineering. I developed both the project and documentation.",
+    tags: ["Python", "HTTP Requests", "YAML", "Terminal"],
+    imageUrl: healthcheckcardImg,
+    hoverUrl: "https://github.com/Westpeaks/HTTP-Healthcheck",
+  },
+  {
     title: "This Site",
     description:
       "In my off time from my current job, I have developed this site.",
@@ -78,23 +83,30 @@ export const projectsData = [
 ] as const;
 
 export const skillsData = [
+  "Writing",
+  "Training",
+  "Documentation",
+  "Markdown",
+  "Management",
+  "Commmunication",
+  "APIs",
+  "Python",
+  "Linux",
+  "Windows Server",
   "HTML",
   "CSS",
   "JavaScript",
   "TypeScript",
   "React",
   "Next.js",
-  "Node.js",
-  "Git",
-  "Tailwind",
-  "Prisma",
-  "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Apollo",
-  "Express",
-  "PostgreSQL",
-  "Python",
-  "Django",
   "Framer Motion",
+  "Tailwind",
+  "Node.js",
+  "Github",
+  "Jira",
+  "Confluence",
+  "SQL",
+  "MongoDB",
+  "PostgreSQL",
+  "Microsoft SQL Server",
 ] as const;
