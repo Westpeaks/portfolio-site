@@ -34,7 +34,7 @@ export default function About() {
       <p>
         <span className="italic">In my downtime</span>, I enjoy spending time with family and friends, making music, 
         <a href='https://www.youtube.com/watch?v=eBxTEoseZak' target='_blank' > smoking some barbecue</a>, and reading. 
-        I'll also bust out some DJ skills if the right person asks. When I am not engaged in those activities, I enjoy{" "} 
+        I&apos;ll also bust out some DJ skills if the right person asks. When I am not engaged in those activities, I enjoy{" "} 
         <span className="font-medium">learning new things</span>. I am currently studying to become a{" "}
         <span className="font-medium">Site Reliability / Cloud Engineer</span>. 
       </p>
