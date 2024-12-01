@@ -79,6 +79,7 @@ export const projectsData = [
       "In my off time from my current job, I have developed this site.",
     tags: ["React", "TypeScript", "Next.js", "Tailwind", "Framer Motion"],
     imageUrl: portfoliositecardImg,
+    hoverUrl: "https://github.com/Westpeaks/portfolio-site",
   },
 ] as const;
 
