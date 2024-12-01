@@ -1,12 +1,12 @@
-'use client'
+"use client"
 
-import Image from 'next/image';
-import React, { useEffect } from 'react';
-import { motion } from 'framer-motion';
-import { HiDownload } from 'react-icons/hi';
-import { BsLinkedin } from 'react-icons/bs';
-import { FaGithubSquare } from 'react-icons/fa';
-import { useSectionInView } from '@/lib/hooks';
+import Image from "next/image";
+import React, { useEffect } from "react";
+import { motion } from "framer-motion";
+import { HiDownload } from "react-icons/hi";
+import { BsLinkedin } from "react-icons/bs";
+import { FaGithubSquare } from "react-icons/fa";
+import { useSectionInView } from "@/lib/hooks";
 
 export default function Intro() {
     const { ref } = useSectionInView('Home', 0.5);
