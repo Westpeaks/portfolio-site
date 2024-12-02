@@ -8,7 +8,6 @@ import { BsLinkedin } from "react-icons/bs";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import profileImg from "@/public/profile.jpg"
-import resumePdf from "../public/peakresume.pdf"; 
 
 export default function Intro() {
     const { ref } = useSectionInView('Home', 0.5);
@@ -55,7 +54,7 @@ export default function Intro() {
 
                 <a className='group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 
                 hover:scale-110 active:scale-105 transition cursor-pointer border border-black/10' 
-                href={'/peakresume.pdf'} download>
+                href='/peakresume.pdf' download>
                     Download Resume <HiDownload className='opacity-60 group-hover:translate-y-1 transition' />
                 </a>
 
