@@ -68,7 +68,7 @@ export const projectsData = [
   {
     title: "Site Down Recovery Plan",
     description:
-      "This document was developed as part of a real strategy to provide technical support engineers a line by line process in the event of an entire client site downtime.",
+      "This document was developed as part of a real strategy to provide technical support engineers a line by line process in the event of an entire client site disruption.",
     tags: ["Confluence", "Jira", "Github"],
     imageUrl: sdrpcardImg,
     hoverUrl: "https://github.com/Westpeaks/Site-Down-Recovery-Plan/blob/main/SDRP.md",
