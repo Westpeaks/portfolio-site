@@ -1,6 +1,6 @@
 import React from "react";
 import { MdOutlineSupportAgent } from "react-icons/md";
-import onspringcardImg from "@/public/onspringcardalt.png";
+import onspringcardImg from "@/public/onspringcard.png";
 import portfoliositecardImg from "@/public/portfoliositecard.png";
 import healthcheckcardImg from "@/public/healthcheckcardalt.png";
 import monitoringdoccardImg from "@/public/monitoringdoccard.png";
