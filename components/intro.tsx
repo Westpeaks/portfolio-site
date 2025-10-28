@@ -40,7 +40,7 @@ export default function Intro() {
             >
                 <span className="font-bold">Hello, I&apos;m Wesley.</span> I&apos;m a{" "}
                 <span className="font-bold">Cybersecurity Professional</span> with {" "}
-                <span className="font-bold">8+ years</span> of broad experience in support, managment, technincal account management, and site reliability. I enjoy
+                <span className="font-bold">8+ years</span> of broad experience in support, managment, technical account management, and site reliability. I enjoy
                 working with people. My current focus is to hone my skillset, and become a {" "} 
                 <span className="font-bold">DevOps Engineer</span>.
             </motion.h1>
