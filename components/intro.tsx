@@ -41,7 +41,7 @@ export default function Intro() {
                 <span className="font-bold">Hello, I&apos;m Wesley.</span> I&apos;m a{" "}
                 <span className="font-bold">Cybersecurity Professional</span> with {" "}
                 <span className="font-bold">8+ years</span> of broad experience in support, managment, technical account management, and site reliability. I enjoy
-                working with people.
+                working with people. I am currently honing my skills in {" "} <span className="font-bold">DevOps Engineering</span> and building DevOps projects.
             </motion.h1>
 
             <motion.div className='flex flex-col sm:flex-row items-center justify-center gap-3 px-4 text-lg font-medium'
