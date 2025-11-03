@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import Image from "next/image";
 import React from "react";
@@ -7,68 +7,86 @@ import { HiDownload } from "react-icons/hi";
 import { BsLinkedin } from "react-icons/bs";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
-import profileImg from "@/public/profile.jpg"
+import profileImg from "@/public/profile.jpg";
 
 export default function Intro() {
-    const { ref } = useSectionInView('Home', 0.5);
-      
-    return (
-        <section ref={ref} id='home' className='mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]'>
-            <div className='flex items-center justify-center'>
-                <div>
-                    <motion.div
-                        initial={{ opacity: 0, scale: 0 }}
-                        animate={{ opacity: 1, scale:1 }}
-                        transition={{ type: 'tween', duration: 0.2, }}
-                    >
-                        <Image src={profileImg} alt='Wes Portrait'
-                        width='192'
-                        height='192'
-                        quality='95'
-                        priority={true}
-                        className='h-30 w-30 rounded-full object-cover border-[0.35rem] 
-                        border-white shadow-xl'
-                        />
-                    </motion.div>
-                    
-                </div>
-            </div>
+  const { ref } = useSectionInView("Home", 0.5);
 
-            <motion.h1 className='mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl'
-                initial={{ opacity: 0, y: 100 }}
-                animate={{ opacity: 1, y: 0 }}
-            >
-                <span className="font-bold">Hello, I&apos;m Wesley.</span> I&apos;m a{" "}
-                <span className="font-bold">Cybersecurity Professional</span> with {" "}
-                <span className="font-bold">8+ years</span> of broad experience in support, managment, technical account management, and site reliability. I enjoy
-                working with people. I am currently honing my skills in {" "} <span className="font-bold">DevOps Engineering</span> and building DevOps projects.
-            </motion.h1>
+  return (
+    <section
+      ref={ref}
+      id="home"
+      className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
+    >
+      <div className="flex items-center justify-center">
+        <div>
+          <motion.div
+            initial={{ opacity: 0, scale: 0 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ type: "tween", duration: 0.2 }}
+          >
+            <Image
+              src={profileImg}
+              alt="Wes Portrait"
+              width="192"
+              height="192"
+              quality="95"
+              priority={true}
+              className="h-30 w-30 rounded-full object-cover border-[0.35rem] 
+                        border-white shadow-xl"
+            />
+          </motion.div>
+        </div>
+      </div>
 
-            <motion.div className='flex flex-col sm:flex-row items-center justify-center gap-3 px-4 text-lg font-medium'
-                initial={{ opacity: 0, y: 100 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.1 }}
-            >
+      <motion.h1
+        className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
+        initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: 1, y: 0 }}
+      >
+        <span className="font-bold">Hello, I&apos;m Wesley.</span> I&apos;m a{" "}
+        <span className="font-bold">Cybersecurity Professional</span> with{" "}
+        <span className="font-bold">8+ years</span> of broad experience in
+        support, technical writing, management (technical accounts and support),
+        and site reliability. I enjoy working with people. I am currently honing
+        my skills in <span className="font-bold">DevOps Engineering</span> and
+        building DevOps projects.
+      </motion.h1>
 
-                <a className='group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 
-                hover:scale-110 active:scale-105 transition cursor-pointer border border-black/10' 
-                href='/peakresume.pdf' download>
-                    Download Resume <HiDownload className='opacity-60 group-hover:translate-y-1 transition' />
-                </a>
+      <motion.div
+        className="flex flex-col sm:flex-row items-center justify-center gap-3 px-4 text-lg font-medium"
+        initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.1 }}
+      >
+        <a
+          className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 
+                hover:scale-110 active:scale-105 transition cursor-pointer border border-black/10"
+          href="/peakresume.pdf"
+          download
+        >
+          Download Resume{" "}
+          <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
+        </a>
 
-                <a className='bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full focus:scale-[1.15] 
-                hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer border border-black/10' 
-                href='https://www.linkedin.com/in/wesley-peak/' target='_blank' >
-                    <BsLinkedin />
-                </a>
+        <a
+          className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full focus:scale-[1.15] 
+                hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer border border-black/10"
+          href="https://www.linkedin.com/in/wesley-peak/"
+          target="_blank"
+        >
+          <BsLinkedin />
+        </a>
 
-                <a className='bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] 
-                hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer border border-black/10'
-                href='https://github.com/Westpeaks/' target='_blank'>
-                    <FaGithubSquare />
-                </a>
-
-            </motion.div>
-        </section>
-  )
+        <a
+          className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] 
+                hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer border border-black/10"
+          href="https://github.com/Westpeaks/"
+          target="_blank"
+        >
+          <FaGithubSquare />
+        </a>
+      </motion.div>
+    </section>
+  );
 }
