@@ -45,12 +45,13 @@ export default function Intro() {
         animate={{ opacity: 1, y: 0 }}
       >
         <span className="font-bold">Hello, I&apos;m Wesley.</span> I&apos;m a{" "}
-        <span className="font-bold">Cybersecurity Professional</span> with{" "}
-        <span className="font-bold">8+ years</span> of broad experience in
-        support, technical writing, management (technical accounts and support),
-        and site reliability. I enjoy working with people. I am currently honing
-        my skills in <span className="font-bold">DevOps Engineering</span> and
-        building DevOps projects.
+        <span className="font-bold">Technical Support Professional</span> with{" "}
+        <span className="font-bold">8+ years</span> of deep experience in
+        support, site reliability, management (technical accounts and support),
+        and technical writing. I enjoy working with people. I am currently
+        honing my skills in{" "}
+        <span className="font-bold">DevOps Engineering</span> and building{" "}
+        <span className="font-bold">DevOps projects</span>.
       </motion.h1>
 
       <motion.div
